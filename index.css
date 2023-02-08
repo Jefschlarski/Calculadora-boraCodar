@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;  
+    font-weight: 400px;
+}
+body{
+    user-select: none;
+    background-color: #807ECE;
+   }
+
+section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 0px 0px 10px 0px;
+    transform: translate(-50%,-50%);
+    background-color: #2D2A37;
+    height: 566px;
+    width: 356px;
+    border-radius: 48px;
+    box-shadow: 0px 2px 5px 2px #0000006c;
+
+}
+#visor_cima{
+    text-align: right;
+    font-size: 20px;
+    color: #6B6B6B;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 40px;
+    
+    
+}
+#visor_baixo{
+    text-align: right;
+    font-size: 36px;
+    color: #EBEBEB;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 40px;
+    
+}
+#equal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#equal i{
+    padding-left: 15px;
+    font-size: 20px;
+    color: #6B6B6B;
+}
+
+.visores{
+    margin: 52px 32px 32px;
+    padding: 10px 10px 10px 10px;
+    user-select:text;
+    height: 86px;
+    width: 288px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+}
+ul li button{
+    width: 64px;
+    height: 64px;
+    margin: 5px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    
+}
+.btn{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 65%, rgba(255, 255, 255, 0.05) 100%), #2D2A37;
+    box-shadow: 0px 2px 5px 2px #0000006c;
+}
+
+.btn.igual{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 65%, rgba(255, 255, 255, 0.05) 100%), #7F45E2; 
+}
+.btn.ce{
+    color:#7F45E2;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn_esp{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 65%, rgba(255, 255, 255, 0.05) 100%), #462878; 
+    box-shadow: 0px 2px 5px 2px #0000006c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover{ 
+    background-color: rgba(0, 0, 0, 0.08);
+    
+}
+.btn_esp:hover{ 
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 65%, rgba(255, 255, 255, 0.05) 100%), #40246d; 
+    
+}
+.btn.igual:hover{ 
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 65%, rgba(255, 255, 255, 0.05) 100%), #723ecc; 
+    
+}
+
+#contatos{
+    padding: 40px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="visores">
+            <p id="visor_cima"></p>
+            <div id="equal"><i class="ph-equals"></i> <p id="visor_baixo"></p></div>
+    </div>
+        <div class="botoes">
+            <ul>
+                <li><button class="btn ce" onclick="limpar()">CE</button></li>
+                <li><button class="btn icon" onclick="percent()"><i class="ph-percent"></i></button></li>
+                <li><button class="btn icon" onclick="deletar()"><i class="ph-backspace"></i></button></li>
+                <li><button class="btn_esp icon" onclick="aplicar('/')"><i class="ph-divide"></i></button></li>
+            </ul>
+            <ul>
+                <li><button class="btn" onclick="inserir('7')">7</button></li>
+                <li><button class="btn" onclick="inserir('8')">8</button></li>
+                <li><button class="btn" onclick="inserir('9')">9</button></li>
+                <li><button class="btn_esp icon" onclick="aplicar('*')"><i class="ph-x"></i></button></li>
+            </ul>
+            <ul>
+                <li><button class="btn" onclick="inserir('4')">4</button></li>
+                <li><button class="btn" onclick="inserir('5')">5</button></li>
+                <li><button class="btn" onclick="inserir('6')">6</button></li>
+                <li><button class="btn_esp" onclick="aplicar('-')">-</button></li>
+            </ul>
+            <ul>
+                <li><button class="btn" onclick="inserir('1')">1</button></li>
+                <li><button class="btn" onclick="inserir('2')">2</button></li>
+                <li><button class="btn" onclick="inserir('3')">3</button></li>
+                <li><button class="btn_esp" onclick="aplicar('+')">+</button></li>
+            </ul>
+            <ul>
+                <li><button class="btn icon" onclick="plusMinus('.')"><i class="ph-plus-minus"></i></button></li>
+                <li><button class="btn" onclick="inserir('0')">0</button></li>
+                <li><button class="btn" onclick="inserir('.')">,</button></li>
+                <li><button class="btn igual icon" onclick="igual()"><i class="ph-equals"></i></button></li>
+            </ul>
+        </div>
+    </section>
+    <footer id="contatos" class="footer">
+        <span class="copy">
+            Jeferson Schlarski &copy;2022
+        </span>
+        <a  target="blank" href="https://github.com/Jefschlarski">GitHub</a>
+        <a  target="blank" href="https://www.linkedin.com/in/jeferson-schlarski-422b3818a">linkedin</a>
+        <a target="blank" href="http://jefschlarski.github.io/">Portifolio</a>
+    
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>
